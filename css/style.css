@@ -63,10 +63,11 @@ body{
 
 .jui-google-result {
   font-family: arial, sans-serif;
-  max-width: 600px;
+  width: 600px;
 }
 
-.jui-google-result > div {
+.jui-google-result > div a {
+  text-decoration: none;
   cursor: pointer;
   width: 100%;
 }
@@ -75,11 +76,12 @@ body{
   display: none;
 }
 
-.jui-google-result > div:hover {
+.jui-google-result > div a:hover {
   text-decoration: underline;
 }
 
-.jui-google-result__headline {
+
+.result_container .jui-google-result__headline a {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -90,7 +92,7 @@ body{
   color: #1a0dab;
 }
 
-.jui-google-result__link {
+.result_container .jui-google-result__link a {
   color: #006621;
   font-size: 14px;
   font-style: normal;
@@ -103,7 +105,7 @@ body{
   zoom: 1;
 }
 
-.jui-google-result__description {
+.result_container .jui-google-result__description a {
   color: #545454;
   display: inline;
   font-size: 13px;
